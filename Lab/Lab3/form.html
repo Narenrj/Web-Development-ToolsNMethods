@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+
+        <div class="container"> 
+            
+            <fieldset> <legend>Form</legend>
+                <form action="/formData.html" method="GET">
+    
+    
+                    <label for="email">E-mail: <span class="required">*</span> </label>
+                    <input type="email" class="form-text" name="email"
+    
+                    <label for="password">Password: <span class="required">*</span> </label>
+                    <input type="password" class="form-text" name="password" onkeyup='check();' />
+    
+                    <label for="cpassword">Confirm Password:<span class="required">*</span> </label>
+                    <input type="password" class="form-text" name="cpassword" onkeyup='check();'/>
+
+    
+                    <label for="address">Gender: <span class="required">*</span> </label>
+                    <input type="radio"  name="gender" value="Male"> Male &ensp;
+                    <input type="radio"  name="gender" value="Female"> Female
+    
+                    <label for="country">Country: <span class="required">*</span> </label>
+                    <select class="form-text" name="country">
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="Australia">Australia</option>
+                      </select>
+    
+                    <label for="hobby">Hobby: <span class="required">*</span> </label>  
+                      <input type="checkbox" name="hobby" value="Dancing"> Dancing &ensp;
+                      <input type="checkbox" name="hobby" value="Singing"> Singing &ensp;
+                      <input type="checkbox" name="hobby" value="Reading"> Reading 
+    
+    
+                    <label for="address">Address: <span class="required">*</span> </label>
+                    <textarea class="form-text" cols="30" rows="4" name="address"></textarea>
+                    
+                    <input type="submit" value="Submit">
+                    
+                    
+                </form>
+            </fieldset>
+        </div>    
+            
+    </body>
+</html>
