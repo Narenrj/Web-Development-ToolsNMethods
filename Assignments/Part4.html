@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Northeastern University Form</title>
+    <style>
+        label {
+            float: left;
+            width: 150px;
+        }
+        
+        #container {
+            width: 100%;
+            margin: auto;
+            background-color: beige;
+        }
+        
+        main {
+            padding: 50px;
+        }
+        
+        table {
+            border: 1px solid black;
+            table-layout: fixed;
+        }
+        
+        th {
+            border: 1px solid black;
+        }
+        
+        td {
+            border: 1px solid black;
+        }
+		.fright{
+		display:inline;
+		float:right;
+		}
+		.fleft{
+		display:inline;
+		float:left;
+		}
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <main>
+            <h1 style="color:red">NORTHEASTERN UNIVERSITY</h1>
+            <h3 class="fleft">Human Resources</h3>
+			<h2 class="fright">Tuition Waiver Form</h2>
+            <br><br><br><br>
+			<hr>
+			
+
+            <form name="myform">
+				<textarea name="text" id="comments" placeholder="This form is used by part-time faculty, part-time staff, retirees, their spouses or domestic partners and their dependents. All full-time faculty and staff should use the online Tuition Waiver Form found on myNEU. Before completing this form, please refer to the Tuition Waiver Program Guidelines. Be sure to include a Dependent Certification Form along with the submission of this form for any dependent children." rows="3" cols="192"></textarea><br><br>
+                <h3 style="color:red">SECTION 1</h3>
+				
+				<label>Academic Term*:</label>
+                <input type="radio" name="title" id="miss" value="miss" required="required" />Fall
+                <input type="radio" name="title" id="mr" value="mr" required="required" />Winter
+                <input type="radio" name="title" id="mrs" value="mrs" required="required" />Spring
+				<input type="radio" name="title" id="mrs" value="mrs" required="required" />Summer
+                <br><br>
+                <label for="firstName">Academic Year*:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="year" />
+                <br><br>
+				<label for="Drinks">Employee Status:</label>
+                <select name="drinks" id="drinks" onchange="selecteddrinks()">
+                    <option value="Cold Coffee">P/T Staff</option>
+                    <option value="Hot Coffee">P/T Faculty</option>
+                    <option value="Iced Tea">Retiree</option>
+                    <option value="Hot Tea">Other</option>
+                </select><br><br>
+				*Terms with multiple sessions are considered one academic term for tuition waiver purposes e.g., summer sessions I and II are considered one academic term.
+				
+				<h3 style="color:red">SECTION 2</h3>
+				
+				<label for="firstName">Student's Name*:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="name" /><br><br>
+				
+				<label for="firstName">Relationship to Employee:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="relationship" /><br><br>
+				
+				<label for="firstName">Student's NUID*:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="NUID" /><br><br>
+				
+				<label for="firstName">Employee's Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="employee's name" /><br><br>
+				
+				<label for="firstName">Employee's NUID:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="employee's nuid" /><br><br>
+				
+				<label for="firstName">Department:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="department" /><br><br>
+				
+				<label for="firstName">Campus Location:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="location" /><br><br>
+				
+				<label for="firstName">Phone Number:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="number" /><br><br>
+				
+				<label for="firstName">Supervisor’s Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="supervisor name" /><br><br>
+				
+				<h3 style="color:red">SECTION 3</h3>
+				
+				<label for="Drinks">Applicable School/Program*:</label>
+                <select name="drinks" id="drinks" onchange="selecteddrinks()">
+                    <option value="Cold Coffee">Undergraduate Program</option>
+                    <option value="Hot Coffee">Law School</option>
+                    <option value="Iced Tea">Doctoral Candidate</option>
+                    <option value="Hot Tea">College of Professional Studies(CPS)</option>
+					<option value="Hot Tea">Graduate School</option>
+					<option value="Hot Tea">CPS Graduate School</option>
+                </select><br><br><br>
+				
+				<textarea name="text" id="comments" placeholder="One course per academic term may be taken one-half hour before the end of your workday. If this applies to you, this form must be signed by your supervisor below and approved by Human Resources Management." rows="2" cols="192"></textarea>
+				<textarea name="text" id="comments" placeholder="Complete the following course information. If you are an employee taking a job related course, please attach the Job Related Designation Form to this waiver. " rows="2" cols="192"></textarea><br><br>
+				
+				<label for="firstName">Course No:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="course no" /><br><br>
+				
+				<label for="firstName">Course Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="course name" /><br><br>
+				
+				<label for="firstName">Supervisor’s Signature:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="signature" /><br><br>
+				
+				<label for="firstName">Credit Hrs:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="credit" /><br><br>
+				
+				<label for="firstName">Day(s):</label>
+                <input type="text" name="firstName" id="firstName" placeholder="days" /><br><br>
+				
+				<label for="firstName">Time am/pm:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="time" /><br><br>
+				
+				<h3 style="color:red">SECTION 4</h3>
+				<div>
+				In accordance with Northeastern University's Tuition Waiver Program Guidelines, my signature attests that I am
+				currently enrolled in the above courses, or that the student listed above is my spouse, domestic partner or
+				unmarried dependent child or the dependent child of my domestic partner as defined under current IRS tax
+				regulations. I also certify that I have read the Tuition Waiver Program Guidelines. </div><br><br>
+				
+				<label for="firstName">Employee’s Signature:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="signature" /><br><br>
+				
+				<label for="firstName">Date:</label>
+                <input type="date" name="firstName" id="firstName" placeholder="date" /><br><br>
+				
+				<h3 style="color:red">SECTION 5</h3>
+				
+				<label for="firstName">HRM Approval:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="signature" /><br><br>
+				
+				<label for="firstName">Date:</label>
+                <input type="date" name="firstName" id="firstName" placeholder="date" /><br><br>
+				
+				<textarea name="text" id="comments" placeholder="Forms will be reviewed for completeness and eligibility. You will be notified if any additional information is needed. Mail completed form to Human Resources, 250 Columbus Place or fax to (617) 373-7610. All waivers must be received by HRM within 30 days of the course start date." rows="2" cols="192"></textarea><br><br>
+				
+				<hr>
+				<h2 class="fright">HRNAVIGATOR</h2>
+            </form>
+        </main>
+    </div>
+
+</body>
+
+</html>

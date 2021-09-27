@@ -1,0 +1,32 @@
+<web-app>
+	<servlet>
+		<servlet-name>Headers</servlet-name>
+		<servlet-class>RequestHeaders</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>Headers</servlet-name>
+		<url-pattern>/headers.html</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Methods</servlet-name>
+		<servlet-class>GetMethods</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>Methods</servlet-name>
+		<url-pattern>/methods.html</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<welcome-file-list>
+		<welcome-file>Basic.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>headers.html</welcome-file>
+	</welcome-file-list>
+	
+</web-app>
