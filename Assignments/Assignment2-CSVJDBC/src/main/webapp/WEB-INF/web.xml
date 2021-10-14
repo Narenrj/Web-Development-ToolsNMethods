@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>GetParameter</servlet-name>
+        <servlet-class>com.mycompany.csvjdbc.GetParameter</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetParameter</servlet-name>
+        <url-pattern>/getParameter</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <security-role>
+        <role-name>demo</role-name>
+    </security-role>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Restricted Resource</web-resource-name>
+            <url-pattern>/testExcel.xls</url-pattern>
+        </web-resource-collection>
+        <web-resource-collection>
+            <web-resource-name>Restricted Resource</web-resource-name>
+            <url-pattern>/Part7.html</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>demo</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>Test</realm-name>
+    </login-config>
+    
+</web-app>

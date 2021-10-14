@@ -1,0 +1,4 @@
+com\mycompany\csvjdbc\GetParameter.class
+com\mycompany\csvjdbc\GetParameterNames.class
+com\mycompany\csvjdbc\TestExcelServlet.class
+com\mycompany\csvjdbc\TestCSVServlet.class
