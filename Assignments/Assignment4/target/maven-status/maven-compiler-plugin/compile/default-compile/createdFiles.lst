@@ -1,0 +1,14 @@
+com\books\controller\AddbooksToDB.class
+META-INF\spring.components
+com\mycompany\assignment4\Books\BooksUserChoice.class
+com\mycompany\assignment4\Books\AddbooksToDB.class
+com\mycompany\assignment4\ShoppingCart\AddToCart.class
+com\ShoppingCart\controller\AddToCart.class
+com\books\controller\BooksUserChoice.class
+com\movies\model\Cart.class
+com\movies\controller\FetchMovies.class
+com\ShoppingCart\controller\RemoveFromCart.class
+com\movies\controller\AddMoviesToDB.class
+com\movies\model\Movies.class
+com\mycompany\assignment4\ShoppingCart\RemoveItem.class
+com\mycompany\assignment_3\Movieuserchoice.class

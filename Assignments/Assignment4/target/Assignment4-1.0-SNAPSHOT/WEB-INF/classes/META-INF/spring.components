@@ -1,0 +1,8 @@
+com.ShoppingCart.controller.AddToCart=javax.servlet.annotation.WebServlet
+com.ShoppingCart.controller.RemoveFromCart=javax.servlet.annotation.WebServlet
+com.books.controller.AddbooksToDB=javax.servlet.annotation.WebServlet
+com.movies.controller.AddMoviesToDB=javax.servlet.annotation.WebServlet
+com.movies.controller.FetchMovies=javax.servlet.annotation.WebServlet
+com.mycompany.assignment4.ShoppingCart.AddToCart=org.springframework.stereotype.Component
+com.mycompany.assignment4.ShoppingCart.RemoveItem=org.springframework.stereotype.Component
+com.mycompany.assignment_3.Movieuserchoice=javax.servlet.annotation.WebServlet
